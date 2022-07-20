@@ -76,24 +76,24 @@ DESC rooms;
 
 
 
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12011,'Hotel Royal Tulip','5*',84,4.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12011,'Hotel Royal Tulip','5*',84,2.0);
 INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12012,'Hotel Cox Today','3*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12013,'Hotel Seagul','3*',84,4.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12013,'Hotel Seagul','3*',84,5.0);
 INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12014,'Hotel Dominos','3*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12015,'Hotel Queen','5*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12016,'Hotel A','5*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12017,'Hotel B','3*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12018,'Hotel C','3*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12019,'Hotel D','3*',84,4.0);
-INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12020,'Hotel E','5*',84,4.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12015,'Hotel Queen','5*',84,3.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12016,'Hotel A','5*',84,2.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12017,'Hotel B','3*',84,1.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12018,'Hotel C','3*',84,3.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12019,'Hotel D','3*',84,5.0);
+INSERT INTO hotels(hotel_id, hotel_name, hotel_type, no_of_rooms, rating) values(12020,'Hotel E','5*',84,5.0);
 
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22011,'Farhan Pollok',TO_DATE('30/05/1998', 'DD/MM/YYYY'),'VIP',23);
-INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22012,'Jamilul Huq',TO_DATE('17/12/1999', 'DD/MM/YYYY'),'Normal',22);
+INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22012,'Jamilul Huq',TO_DATE('17/12/1999', 'DD/MM/YYYY'),'CIP',22);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22013,'Abir Hasan',TO_DATE('12/12/1997', 'DD/MM/YYYY'),'Normal',24);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22014,'Faias Promit',TO_DATE('14/11/1996', 'DD/MM/YYYY'),'VIP',25);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22015,'Tamim Hossain',TO_DATE('11/06/2000', 'DD/MM/YYYY'),'Normal',21);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22016,'Kowshik',TO_DATE('30/05/1998', 'DD/MM/YYYY'),'VIP',23);
-INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22017,'Saimun',TO_DATE('17/12/1999', 'DD/MM/YYYY'),'Normal',22);
+INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22017,'Faias Promit',TO_DATE('17/12/1999', 'DD/MM/YYYY'),'Normal',22);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22018,'Shoriful',TO_DATE('12/12/1997', 'DD/MM/YYYY'),'Normal',24);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22019,'Arnob',TO_DATE('14/11/1996', 'DD/MM/YYYY'),'VIP',25);
 INSERT INTO customers(cust_id, cust_name, date_of_birth, cust_type, cust_age) values(22020,'Parvej',TO_DATE('11/06/2000', 'DD/MM/YYYY'),'Normal',21);
@@ -178,5 +178,7 @@ SELECT * FROM booking_payment;
 
 
 --------------------lab3------------------------
----primary key foreign key not null ----
+-- applying operation on field data 
+   select (no_of_rooms/5) as rooms_devded_by_five from hotels;
+
   
